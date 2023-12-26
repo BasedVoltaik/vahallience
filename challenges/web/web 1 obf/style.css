@@ -1,0 +1,22 @@
+.inp{
+    width: 500px;
+    margin-top: 150px;
+    height: 100px;
+    background-color: #2C3333;
+    color: white;
+    font-size: 30px;
+    
+}
+.mid{
+    text-align: center;
+}
+input::placeholder {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+
+body{
+    background-color: #2C3333;
+    font-family: 'Roboto', sans-serif;
+}
