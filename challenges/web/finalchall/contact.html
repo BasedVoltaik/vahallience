@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #50a3a2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: #9cce31;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            background-color: #3e8e8e;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact-form input[type="text"], .contact-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #50a3a2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #3e8e8e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>S & T Consulting</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="job-application.html">Job Applications</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="job-options.html">Look For a Job</a>
+    </nav>
+    <main>
+        <section>
+            <h1>Welcome to our company!</h1>
+            <p>We provide high-quality products and services to our customers.</p>
+        </section>
+        <section>
+            <h1>Our Mission</h1>
+            <p>Our mission is to be the leading provider of innovative solutions in our industry.</p>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 S & T Consulting
+    </footer>
+    <script>
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            redirectToConfirmation();
+        });
+
+        function redirectToConfirmation() {
+            window.location.href = "questconfirm.html";
+        }
+    </script>
+</body>
+</html>
